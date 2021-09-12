@@ -11,5 +11,5 @@ docker swarm leave --force
 docker rm $(docker ps --filter status=exited -q)
 docker container ls -a
 
-# Create an interactive shell
-docker exec -it CONTAINER_ID /bin/sh
+# Create an interactive BASH shell
+docker exec -it CONTAINER_ID bash
